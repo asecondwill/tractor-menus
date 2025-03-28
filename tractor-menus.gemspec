@@ -19,7 +19,8 @@ Gem::Specification.new do |spec|
   spec.metadata["source_code_uri"] = "https://github.com/asecondwill/tractor-menus"
   spec.metadata["changelog_uri"] = "https://github.com/asecondwill/tractor-menus"
 
-  spec.files = Dir["app/**/*", "lib/**/*", "config/**/*", "db/**/*"]
+  #spec.files = Dir["app/**/*", "lib/**/*", "config/**/*", "db/**/*"]
+  spec.files = Dir["app/**/*", "lib/**/*"]
   
   spec.bindir = "exe"
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
