@@ -1,10 +1,11 @@
 # frozen_string_literal: true
 
-require_relative "lib/tractor/menus/version"
+
+require_relative "lib/tractor_menus/version"
 
 Gem::Specification.new do |spec|
   spec.name = "tractor-menus"
-  spec.version = Tractor::Menus::VERSION
+  spec.version = TractorMenus::VERSION
   spec.authors = ["Will"]
   spec.email = ["will@kindleman.com.au"]
 
@@ -28,4 +29,6 @@ Gem::Specification.new do |spec|
   
   # Depend on the main tractor gem
   spec.add_dependency "tractor"
+
+  
 end
