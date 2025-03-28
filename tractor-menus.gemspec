@@ -20,6 +20,7 @@ Gem::Specification.new do |spec|
   spec.metadata["changelog_uri"] = "https://github.com/asecondwill/tractor-menus"
 
   spec.files = Dir["app/**/*", "lib/**/*", "config/**/*", "db/**/*"]
+  
   spec.bindir = "exe"
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
