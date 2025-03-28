@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "menus/version"
+require_relative "tractor_menus/version"
 
 module TractorMenus
   class Error < StandardError; end
