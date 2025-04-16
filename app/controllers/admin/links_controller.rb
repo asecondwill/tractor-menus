@@ -15,7 +15,9 @@ class Admin::LinksController < AdminController
     # Todo: split this out into methods and neatness.
     if params[:q].include? ":"
       a = params[:q].split(":")
-      if [ "Page", "Article" ].include? a[0].capitalize
+      # Check the model name against a configurable list of allowed models
+      allowed_models = TractorMenus::Engine.config.allowed_models 
+      if allowed_models.include? a[0].capitalize
         model = a[0].capitalize
       else
         model = "Page"

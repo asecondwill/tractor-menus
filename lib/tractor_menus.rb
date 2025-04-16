@@ -6,10 +6,11 @@ module TractorMenus
   include ActiveSupport::Configurable
   config_accessor :importmap
   self.importmap = Importmap::Map.new
-  
+
   class Error < StandardError; end
   
   class Engine < ::Rails::Engine
+    config.allowed_models = ["Page", "Post", "Article"] # Default models
     # Remove isolate_namespace to keep things simpler
     
     # Add the assets paths to the engine
